@@ -1,3 +1,0 @@
-/workspaces/c-plus-plus--playground/build/CMakeFiles/Playground.dir
-/workspaces/c-plus-plus--playground/build/CMakeFiles/edit_cache.dir
-/workspaces/c-plus-plus--playground/build/CMakeFiles/rebuild_cache.dir
