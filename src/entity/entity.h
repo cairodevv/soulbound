@@ -8,14 +8,17 @@
 
 class Entity {
     public:
-        std::array<float, 4> spriteSheetCoords;
+        std::array<float, 4> initSpriteSheetCoords;
         std::map<std::string, std::array<float, 4>> animations;
         std::pair<int, int> position;
         bool isVisible;
-        
+        double health;
         
         void animate(std::string animationIdentifier);
-        Entity(std::array<float, 4> initSpriteSheetPosition, std::pair<int, int> pos = {0, 0}, bool visibility = true)
-         : spriteSheetCoords(initSpriteSheetPosition), position(pos), isVisible(visibility) {};
+        Entity(
+            std::pair<int, int> pos = {0, 0}, 
+            bool visibility = true
+        )
+         : position(pos), isVisible(visibility) {};
 };        
 #endif
