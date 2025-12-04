@@ -11,10 +11,11 @@ class ControllableCharacter : public Entity {
         void duck();
 
         ControllableCharacter(
-            std::pair<int, int> pos = {0,0}, 
-            bool visibility = true,
+            std::string mainSpriteSheet,
+            std::pair<int, int> pos, 
+            bool visibility,
             double initHealth
         )
-         : Entity(pos, visibility, initHealth) {};
+         : Entity(mainSpriteSheet, pos, visibility, initHealth) {};
 };
 #endif 

@@ -1,9 +1,7 @@
-#include <iostream>
-#include "entity/character/controllableCharacter.h"
-
+#include <glad/glad.h>   
+#include <GLFW/glfw3.h>
 
 int main() {
-    ControllableCharacter lethe;
-    std::cout << lethe.isVisible;
+    
     return 0;
 }

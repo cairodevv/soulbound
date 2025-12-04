@@ -10,11 +10,12 @@ class Enemy : public Entity {
 
     
         Enemy(
+            std::string mainSpriteSheet,
             std::pair<int, int> pos, 
             bool visibility,
             double initHealth
         )
-         : Entity(pos, visibility, initHealth) {};
+         : Entity(mainSpriteSheet, pos, visibility, initHealth) {};
 };
 
 #endif
