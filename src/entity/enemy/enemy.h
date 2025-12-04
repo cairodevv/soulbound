@@ -10,10 +10,11 @@ class Enemy : public Entity {
 
     
         Enemy(
-            std::pair<int, int> pos = {0,0}, 
-            bool visibility = true
+            std::pair<int, int> pos, 
+            bool visibility,
+            double initHealth
         )
-         : Entity(pos, visibility) {};
+         : Entity(pos, visibility, initHealth) {};
 };
 
 #endif
